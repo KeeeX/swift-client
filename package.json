@@ -35,13 +35,13 @@
   },
   "dependencies": {
     "query-string": "^6.1.0",
-    "request": "^2.74.0",
-    "request-promise": "^4.1.1",
-    "url-parse": "^1.1.8"
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5",
+    "url-parse": "^1.4.7"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
+    "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
-    "mocha": "5.2.0"
+    "mocha": "^8.0.1"
   }
 }
