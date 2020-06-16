@@ -17,7 +17,9 @@ container.get('test-file', process.stdout).then(() => {
 ```
 ## Installation
 
-    $ npm install --save openstack-swift-client
+    If you have access to KeeeX repository:
+
+    $ npm install --save @keeex/openstack-swift-client
 
 ## Documentation
 
