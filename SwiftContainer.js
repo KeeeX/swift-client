@@ -65,7 +65,14 @@ class SwiftContainer extends SwiftEntity {
                 }
             }).on('error', err => {
                 reject(err);
-            }).on('end', () => {
+            }).on('response', response => {
+              if (response.statusCode !== 200) {
+                const error = new Error("File not found");
+                error.response = response;
+                reject(error);
+              }
+            })
+            .on('end', () => {
                 resolve();
             }).pipe(stream);
         }));
